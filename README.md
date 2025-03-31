@@ -7,6 +7,7 @@ TradingBot(Beta) is an algorithmic trading framework designed for quantitative t
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
+- [How It Works](#how-it-works)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
@@ -37,6 +38,15 @@ What makes TradingBot(Beta) stand out is its **powerful AI-driven approach** to 
               numpy pandas matplotlib scikit-learn tensorflow gym yfinance seaborn wordcloud
   ```
 
+## How It Works
+
+1. **Data Collection:** The bot fetches real-time and historical market data from `yfinance`.
+2. **Sentiment Analysis:** News sentiment is analyzed using NLP models to gauge market conditions.
+3. **Feature Engineering:** Data is processed and transformed using PCA and standardization techniques from `scikit-learn`.
+4. **Reinforcement Learning:** The bot trains a trading agent using `stable_baselines3`, optimizing decision-making.
+5. **Trading Execution:** The trained model executes trades based on learned strategies, integrating risk management features.
+6. **Visualization & Reporting:** Results are visualized using `mplfinance` and `seaborn`, providing insights into trading performance.
+
 ## Configuration
 
 - Modify the `config.json` file to change API keys, trading parameters, and risk management settings.
@@ -48,5 +58,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
-
-
